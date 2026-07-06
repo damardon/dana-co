@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DANA&CO — IA, automatización y liderazgo tecnológico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/dana-gotra.css" />
+<link rel="icon" href="assets/img/danaco.jpg" sizes="32x32" />
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <div class="logo" onclick="go('inicio')"><img src="assets/img/logo.svg" alt="DANA&CO" /></div>
+    <div class="nav-links" id="navlinks">
+      <a onclick="go('studio')">AI Automation Studio</a>
+      <a onclick="go('cto')">Gerente TI as a Service</a>
+      <div class="dd">
+        <a>Servicios ▾</a>
+        <div class="dd-menu">
+<a onclick="go('tech')"><b>Dana Tech Solutions</b><span>Software factory + IoT</span></a>
+          <a onclick="go('audit')"><b>Dana Audit</b><span>AI Operations Audit</span></a>
+        </div>
+      </div>
+      <a onclick="go('casos')">Casos</a>
+      <a onclick="go('nosotros')">Nosotros</a>
+      <a onclick="go('contacto')" class="nav-cta">Agenda diagnóstico</a>
+    </div>
+    <button class="burger" id="burger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ============ INICIO ============ -->
+<div class="page active" id="inicio">
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="tagline">Consultora boutique · +15 años liderando tecnologías</p>
+        <h1 class="gotra-h1">
+          <span>somos expertos</span>
+          <span class="dim">en tecnología</span>
+        </h1>
+        <p class="lead">Transformamos problemas complejos en soluciones que operan en producción — IA, automatización y liderazgo tecnológico con el mismo estándar que exigen minería, fintech y energía.</p>
+        <div class="hero-cta">
+          <a onclick="go('studio')" class="btn btn-primary">Ver AI Automation Studio →</a>
+          <a onclick="go('contacto')" class="btn btn-ghost">Agenda un diagnóstico</a>
+        </div>
+      </div>
+      <div>
+        <div class="portrait-card">
+          <img src="assets/img/dana-mardones.png" alt="Dana Mardones" />
+          <div class="num">15<span class="accent">+</span></div>
+          <div class="lbl">años liderando tecnología en industrias críticas</div>
+          <div class="portrait-mini">
+            <div><b>E2E</b><span>del problema a producción</span></div>
+            <div><b>SAP·AWS</b><span>stacks enterprise</span></div>
+            <div><b>IA</b><span>integrada al ciclo</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="strip"><div class="wrap strip-in">
+      <span class="t">Experiencia comprobada en</span>
+      <span class="i">Minería</span><span class="i">Fintech</span><span class="i">Energía</span>
+      <span class="i">Automotriz</span><span class="i">Defensa</span><span class="i">Telecom</span><span class="i">Software</span>
+    </div></div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Cuatro formas de trabajar juntos</span>
+        <h2>Productos, no promesas.</h2>
+        <p>Cada submarca resuelve un problema distinto. Empieza por donde más te duele.</p>
+      </div>
+
+            <div class="brandstack">
+        <div class="brandcard studio" onclick="go('studio')">
+          <span class="tag">★ Lo más solicitado</span>
+          <h3>Dana AI Studio</h3>
+          <p>Agentes de IA por rol — inbound, outbound, preventa y postventa — en WhatsApp, CRM y calendario. Trabajan 24/7 con reglas de negocio claras.</p>
+          <span class="go">Ver demos y planes →</span>
+        </div>
+        <div class="brandcard" onclick="go('cto')">
+          <span class="tag">Producto</span>
+          <h3>Gerente TI as a Service</h3>
+          <p>Liderazgo tecnológico ejecutivo: arquitectura, proveedores, seguridad y roadmap de IA — sin contratar un gerente interno.</p>
+          <span class="go">Conocer más →</span>
+        </div>
+        <div class="brandcard" onclick="go('tech')">
+          <span class="tag">Producto</span>
+          <h3>Dana Tech Solutions</h3>
+          <p>Software factory end-to-end e integración IoT. De la idea al producto en producción.</p>
+          <span class="go">Conocer más →</span>
+        </div>
+        <div class="brandcard" onclick="go('audit')">
+          <span class="tag">Puerta de entrada</span>
+          <h3>Dana Audit — AI Operations Audit</h3>
+          <p>Diagnóstico de brechas, roadmap de automatización con IA y plan de digitalización en 2–4 semanas.</p>
+          <span class="go">Empezar por aquí →</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">Casos de éxito</span><h2>Lo hemos resuelto en producción.</h2><p>Proyectos reales en industrias donde el error cuesta caro.</p></div>
+      <div class="case-grid">
+        <div class="case has-thumb" onclick="go('caso-copec')"><img class="case-thumb" src="assets/img/case-copec.png" alt="App COPEC FF.AA." loading="lazy" /><div class="case-body"><div class="cat">Fintech · Defensa</div><h3>App COPEC — FF.AA.</h3><p>Módulo de gestión de combustible para las Fuerzas Armadas dentro de Muevo Empresas, integrado al core SAP.</p><div class="role">Directora de proyecto · Referente técnico E2E</div></div></div>
+        <div class="case has-thumb" onclick="go('caso-derco')"><img class="case-thumb" src="assets/img/hero-slide-2.jpg" alt="Sensor Inteligente DERCO" loading="lazy" /><div class="case-body"><div class="cat">IoT · Automotriz</div><h3>Sensor Inteligente DERCO</h3><p>Plataforma de telemática y seguridad vehicular: IoT, cloud AWS, app móvil e integración con Carabineros.</p><div class="role">Project Manager E2E</div></div></div>
+        <div class="case has-thumb" onclick="go('caso-codelco')"><img class="case-thumb" src="assets/img/codelco.gif" alt="OPM3 Codelco" loading="lazy" /><div class="case-body"><div class="cat">Madurez · Minería</div><h3>OPM3 Codelco</h3><p>Evaluación de madurez organizacional sobre 105 facilitadores OPM3 en divisiones de la minera más grande del mundo.</p><div class="role">Líder técnico y metodológico</div></div></div>
+      </div>
+      <div class="trust-logos">
+        <span class="trust-label">Trayectoria en</span>
+        <img src="assets/img/logo-experian.png" alt="Experian" height="28" loading="lazy" />
+        <img src="assets/img/logo-codelco.png" alt="Codelco" height="28" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <section class="final" style="padding-top:0">
+    <div class="wrap">
+      <h2>Tus dolores de cabeza son <em>nuestra especialidad</em>.</h2>
+      <p>Agenda un diagnóstico sin costo. Conversamos tu situación y te digo con franqueza por dónde partir.</p>
+      <a onclick="go('contacto')" class="btn btn-primary">Agenda tu diagnóstico →</a>
+    </div>
+  </section>
+</div>
+
+<!-- ============ AI AUTOMATION STUDIO ============ -->
+<div class="page" id="studio">
+  <section class="phero">
+    <div class="wrap">
+      <span class="eyebrow">★ Dana AI Studio</span>
+      <h1>IA que responde, califica y <em>vende automáticamente</em>.</h1>
+      <p class="sub">Implementamos asistentes inteligentes y automatizaciones que atienden a tus clientes 24/7, capturan leads y derivan a tu equipo solo las oportunidades reales — sin contratar más personal.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:10px">
+    <div class="wrap">
+      <div class="whofor">
+        <h3>Para quién es</h3>
+        <div class="who-grid">
+          <div class="who"><span class="dot"></span>Clínicas dentales, estética y kinesiología</div>
+          <div class="who"><span class="dot"></span>Inmobiliarias y corredores de propiedades</div>
+          <div class="who"><span class="dot"></span>Academias, cursos y educación</div>
+          <div class="who"><span class="dot"></span>Servicios técnicos y mantenimiento</div>
+          <div class="who"><span class="dot"></span>Restaurantes, banquetería y eventos</div>
+          <div class="who"><span class="dot"></span>Estudios de abogados, contadores y asesorías</div>
+        </div>
+      </div>
+
+      <h2 style="font-size:1.7rem;margin:10px 0 6px">Cómo funciona</h2>
+      <div class="flow">
+        <div class="flow-step"><div class="s">1</div><p>Tu cliente escribe por WhatsApp</p></div>
+        <div class="flow-step"><div class="s">2</div><p>La IA responde al instante</p></div>
+        <div class="flow-step"><div class="s">3</div><p>El lead queda registrado</p></div>
+        <div class="flow-step"><div class="s">4</div><p>El sistema agenda o deriva</p></div>
+        <div class="flow-step"><div class="s">5</div><p>Tu equipo recibe el resumen</p></div>
+      </div>
+
+      
+      <div id="dana-demos-widget">
+        <div class="adw-container">
+          <div class="adw-left">
+            <span class="adw-badge">Demos interactivas</span>
+            <h2 class="adw-title">Agentes que se adaptan<br>a <span>tu operación</span></h2>
+            <p class="adw-subtitle">Explora cómo cada agente resuelve un tramo de tu embudo comercial — con conversaciones reales en WhatsApp.</p>
+            <p class="adw-tabs-label">Agentes</p>
+            <div class="adw-tabs">
+              <button type="button" class="adw-tab active" data-adw="inbound" onclick="danaDemoSwitch('inbound')"><span class="adw-tab-icon">S</span> Sofía · Inbound</button>
+              <button type="button" class="adw-tab" data-adw="outbound" onclick="danaDemoSwitch('outbound')"><span class="adw-tab-icon">M</span> Mateo · Outbound</button>
+              <button type="button" class="adw-tab" data-adw="preventa" onclick="danaDemoSwitch('preventa')"><span class="adw-tab-icon">V</span> Valentina · Preventa</button>
+              <button type="button" class="adw-tab" data-adw="postventa" onclick="danaDemoSwitch('postventa')"><span class="adw-tab-icon">C</span> Carlos · Postventa</button>
+            </div>
+            <ul class="adw-features" id="adw-features">
+              <li>Responde al instante y califica la intención del cliente</li>
+              <li>Registra el lead y deriva solo oportunidades reales</li>
+              <li>Integración con calendario, CRM y resumen al equipo</li>
+            </ul>
+          </div>
+          <div class="adw-right">
+            <div class="adw-panel active" id="adw-inbound">
+              <div class="dana-phone"><div class="dana-phone-head"><span class="dana-phone-dot">S</span> Sofía · Inbound</div><div class="dana-phone-body"><div class="dana-msg in">Hola, vi su servicio para clínicas. ¿Atienden por Isapre?</div><div class="dana-msg out">Sí. ¿Prefiere horario AM o PM para una evaluación inicial?</div><div class="dana-msg in">AM, por favor.</div><div class="dana-msg out">Agendado martes 10:30. Resumen enviado a su CRM.</div></div></div>
+            </div>
+            <div class="adw-panel" id="adw-outbound">
+              <div class="dana-phone"><div class="dana-phone-head"><span class="dana-phone-dot">M</span> Mateo · Outbound</div><div class="dana-phone-body"><div class="dana-msg out">Hola Ana, le escribo por su consulta de marzo sobre automatización.</div><div class="dana-msg in">Sí, lo dejamos pendiente.</div><div class="dana-msg out">¿Le sirve una llamada de 15 min el jueves?</div><div class="dana-msg in">Sí, en la tarde.</div></div></div>
+            </div>
+            <div class="adw-panel" id="adw-preventa">
+              <div class="dana-phone"><div class="dana-phone-head"><span class="dana-phone-dot">V</span> Valentina · Preventa</div><div class="dana-phone-body"><div class="dana-msg in">Necesito cotización para 40 usuarios.</div><div class="dana-msg out">Plan Pro: $4.2M + IVA/mes. PDF adjunto con alcance.</div><div class="dana-msg in">Envíen a compras.</div><div class="dana-msg out">Hecho. Aviso a su ejecutivo asignado.</div></div></div>
+            </div>
+            <div class="adw-panel" id="adw-postventa">
+              <div class="dana-phone"><div class="dana-phone-head"><span class="dana-phone-dot">C</span> Carlos · Postventa</div><div class="dana-phone-body"><div class="dana-msg in">No puedo generar el informe mensual.</div><div class="dana-msg out">Corregido: permiso de rol actualizado. ¿Puede reintentar?</div><div class="dana-msg in">Listo, gracias.</div><div class="dana-msg out">Su plan renueva en 30 días — ¿envío propuesta de upgrade?</div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 style="font-size:1.7rem;margin:36px 0 18px">Planes WhatsApp IA</h2>
+      <div class="packs">
+        <div class="pack">
+          <span class="pack-tag">Básico · Entrada rápida</span>
+          <h3>WhatsApp IA Básico</h3>
+          <p class="for">Para negocios con muchas consultas repetidas que quieren dejar de responder a mano.</p>
+          <ul>
+            <li>Bot de bienvenida</li>
+            <li>Respuestas a preguntas frecuentes</li>
+            <li>Derivación a un humano cuando se necesita</li>
+            <li>Registro de leads en Google Sheets</li>
+          </ul>
+          <div class="pack-price"><b>$350.000 – $700.000</b><span>setup · mantención $80.000–$180.000 /mes</span></div>
+        </div>
+        <div class="pack featured">
+          <span class="pack-tag">Ventas · Más vendido</span>
+          <h3>WhatsApp IA Ventas</h3>
+          <p class="for">Para negocios que quieren convertir consultas en ventas, no solo responder.</p>
+          <ul>
+            <li>Todo lo del plan Básico</li>
+            <li>Calificación automática de leads</li>
+            <li>Integración con calendario y CRM</li>
+            <li>Seguimiento automático</li>
+            <li>Dashboard para el vendedor</li>
+          </ul>
+          <div class="pack-price"><b>$900.000 – $1.800.000</b><span>setup · mantención $200.000–$450.000 /mes</span></div>
+        </div>
+        <div class="pack">
+          <span class="pack-tag">Pro · Operación compleja</span>
+          <h3>WhatsApp IA Pro</h3>
+          <p class="for">Para empresas con múltiples áreas y operación más sofisticada.</p>
+          <ul>
+            <li>Agentes IA con base de conocimiento (RAG)</li>
+            <li>Enrutamiento inteligente por área</li>
+            <li>Reportes y logs</li>
+            <li>Revisión humana y múltiples flujos</li>
+          </ul>
+          <div class="pack-price"><b>$2.000.000 – $5.000.000+</b><span>setup · mantención desde $500.000 /mes</span></div>
+        </div>
+      </div>
+
+      <div class="sprint">
+        <div>
+          <span class="eyebrow">AI Automation Sprint · El comodín</span>
+          <h3>Automatizamos lo que quieras, en 10 días.</h3>
+          <p>¿Tienes un proceso que le quita horas a tu equipo? Lo convertimos en una automatización de alto impacto, lista y funcionando, en dos semanas hábiles.</p>
+          <ul>
+            <li><b>Días 1–3 · Diagnóstico:</b> entendemos el proceso y definimos el de mayor retorno</li>
+            <li><b>Días 4–7 · Diseño:</b> arquitectura de la automatización e integraciones</li>
+            <li><b>Días 8–10 · Implementación:</b> construcción, pruebas y puesta en marcha</li>
+          </ul>
+        </div>
+        <div class="sprint-box">
+          <div style="font-size:.76rem;text-transform:uppercase;letter-spacing:.14em;opacity:.7;font-weight:700">Implementación</div>
+          <div class="big">10<small> días</small></div>
+          <p style="opacity:.8;font-size:.9rem;margin:8px 0 18px">Alcance y precio fijos. Cotización en 24h.</p>
+          <a onclick="go('contacto')" class="btn btn-light" style="width:100%;justify-content:center">Cotizar mi Sprint →</a>
+        </div>
+      </div>
+
+      <p style="text-align:center;margin-top:30px;color:var(--ink-soft)">¿No sabes qué automatizar primero? Empieza por la <a onclick="go('audit')" style="color:var(--accent);font-weight:700;cursor:pointer">AI Operations Audit →</a></p>
+    </div>
+  </section>
+</div>
+
+<!-- ============ CTO AS A SERVICE ============ -->
+<div class="page" id="cto">
+  <section class="phero">
+    <div class="wrap">
+      <span class="eyebrow">★ Dana Gerente TI as a Service</span>
+      <h1>Liderazgo tecnológico senior, <em>por fracción del costo</em>.</h1>
+      <p class="sub">Pon a disposición de tu empresa una CTO con +15 años de experiencia: definición de arquitectura, supervisión de producto y decisiones estratégicas de IA y automatización — sin el costo ni la espera de contratar un ejecutivo interno.</p>
+    </div>
+  </section>
+  <section style="padding-top:10px">
+    <div class="wrap">
+      <div class="star">
+        <span class="badge">Cómo se usa en 2026</span>
+        <h2>La jugada más rentable del año.</h2>
+        <p class="lead">El CTO fraccional dejó de ser un experimento. Con la presión de adoptar IA y un mercado de talento senior escaso y caro, contratar liderazgo técnico por horas — alguien que ya tomó estas decisiones en proyectos reales — es la forma en que las empresas medianas acceden a criterio de primer nivel sin pagar un sueldo ejecutivo completo.</p>
+        <div class="uc-grid">
+          <div class="uc"><h4>Startups post-inversión</h4><p>Decisiones de arquitectura correctas antes de escalar — para no rehacer todo en 18 meses.</p></div>
+          <div class="uc"><h4>Industria tradicional digitalizándose</h4><p>Sumar IA a minería, energía o construcción sin romper lo que ya funciona.</p></div>
+          <div class="uc"><h4>Deuda técnica heredada</h4><p>Un roadmap senior para ordenar el caos y recuperar velocidad de desarrollo.</p></div>
+          <div class="uc"><h4>Directorios que exigen un plan de IA</h4><p>La voz técnica que traduce "¿cuál es nuestra estrategia de IA?" en un plan ejecutable.</p></div>
+        </div>
+      </div>
+
+      <div class="whofor" style="margin-top:30px">
+        <h3>Qué incluye</h3>
+        <div class="who-grid">
+          <div class="who"><span class="dot"></span>Definición de la arquitectura tecnológica adecuada</div>
+          <div class="who"><span class="dot"></span>Supervisión del desarrollo de producto</div>
+          <div class="who"><span class="dot"></span>Escalabilidad y seguridad de la plataforma</div>
+          <div class="who"><span class="dot"></span>Estrategia y roadmap de IA y automatización</div>
+          <div class="who"><span class="dot"></span>Sesiones periódicas con fundadores y directorio</div>
+          <div class="who"><span class="dot"></span>Modelo flexible: por horas o retainer mensual</div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:34px"><a onclick="go('contacto')" class="btn btn-primary">Conversemos tu estrategia →</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ TECH SOLUTIONS ============ -->
+<div class="page" id="tech">
+  <section class="phero">
+    <div class="wrap">
+      <span class="eyebrow">Servicios · Dana Tech Solutions</span>
+      <h1>De la idea al producto <em>vivo en producción</em>.</h1>
+      <p class="sub">Software factory end-to-end con IA integrada al ciclo, e integración de hardware e IoT. Lo que antes tomaba meses, hoy toma semanas — sin sacrificar calidad ni control.</p>
+    </div>
+  </section>
+  <section style="padding-top:10px">
+    <div class="wrap">
+      <div class="cards3">
+        <div class="card"><div class="n">Software Factory E2E</div><h3>Desarrollo end-to-end</h3><p>Una sola contraparte del problema a producción, con IA acelerando cada etapa.</p><ul><li>Discovery y arquitectura</li><li>Desarrollo, QA y deploy CI/CD</li><li>Cloud, monitoreo y soporte</li></ul></div>
+        <div class="card"><div class="n">IoT &amp; Hardware</div><h3>Integración de sensores</h3><p>Plataformas que combinan dispositivos físicos, conectividad, cloud y apps — como el Sensor Inteligente DERCO.</p><ul><li>Telemetría y geolocalización</li><li>Integración con sistemas externos</li><li>Apps nativas iOS / Android</li></ul></div>
+        <div class="card"><div class="n">Integraciones enterprise</div><h3>Core &amp; legacy</h3><p>Conectamos lo nuevo con lo que ya tienes: SAP, sistemas transaccionales y APIs críticas.</p><ul><li>SAP (MM, SD, FI, PI/PO)</li><li>APIs REST / SOAP</li><li>AWS, Angular, microservicios</li></ul></div>
+      </div>
+      <p style="margin-top:24px;color:var(--ink-soft);font-size:.96rem">¿Quieres ver esto en acción? Revisa los casos <a onclick="go('caso-copec')" style="color:var(--accent);font-weight:700;cursor:pointer">App COPEC</a> y <a onclick="go('caso-derco')" style="color:var(--accent);font-weight:700;cursor:pointer">Sensor DERCO</a>.</p>
+      <div style="text-align:center;margin-top:24px"><a onclick="go('contacto')" class="btn btn-primary">Construyamos tu producto →</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ AUDIT ============ -->
+<div class="page" id="audit">
+  <section class="phero">
+    <div class="wrap">
+      <span class="eyebrow">Servicios · Dana Audit</span>
+      <h1>AI Operations Audit — <em>el mejor primer paso</em>.</h1>
+      <p class="sub">Antes de automatizar a ciegas, un diagnóstico senior de dónde estás parado y qué te conviene mover primero. Bajo compromiso, máximo criterio.</p>
+    </div>
+  </section>
+  <section style="padding-top:10px">
+    <div class="wrap">
+      <div class="star">
+        <span class="badge">2 semanas · Entregables claros</span>
+        <h2>Qué te llevas.</h2>
+        <p class="lead">Un informe ejecutivo accionable, sin humo, y un camino directo hacia el siguiente paso.</p>
+        <div class="uc-grid">
+          <div class="uc"><h4>1 · Auditoría de brechas tecnológicas</h4><p>Dónde tu stack te frena o te expone a riesgo.</p></div>
+          <div class="uc"><h4>2 · Roadmap de automatización con IA</h4><p>Qué automatizar, en qué orden y con qué retorno estimado.</p></div>
+          <div class="uc"><h4>3 · Evaluación de gestión de proyectos</h4><p>Madurez, cuellos de botella y cómo recuperar velocidad de entrega.</p></div>
+          <div class="uc"><h4>4 · Roadmap de mejoramiento</h4><p>Quick wins desde el día uno + iniciativas priorizadas por impacto.</p></div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:34px"><a onclick="go('contacto')" class="btn btn-primary">Solicitar mi auditoría →</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ CASOS ============ -->
+<div class="page" id="casos">
+  <section class="phero"><div class="wrap"><span class="eyebrow">Casos de éxito</span><h1>No vendemos teoría. <em>Esto lo construimos.</em></h1><p class="sub">Proyectos reales en industrias donde el error cuesta caro — defensa, automotriz, minería.</p></div></section>
+  <section style="padding-top:10px"><div class="wrap"><div class="case-grid">
+    <div class="case has-thumb" onclick="go('caso-copec')"><img class="case-thumb" src="assets/img/case-copec.png" alt="" loading="lazy" /><div class="case-body"><div class="cat">Fintech · Defensa</div><h3>App COPEC — FF.AA.</h3><p>Módulo de gestión de combustible para las Fuerzas Armadas dentro de Muevo Empresas, con prepago y post-pago integrados al core SAP.</p><div class="role">Directora de proyecto · Referente técnico E2E →</div></div></div>
+    <div class="case has-thumb" onclick="go('caso-derco')"><img class="case-thumb" src="assets/img/hero-slide-2.jpg" alt="" loading="lazy" /><div class="case-body"><div class="cat">IoT · Automotriz</div><h3>Sensor Inteligente DERCO</h3><p>Telemática y seguridad vehicular con marca propia: IoT, cloud AWS, app móvil e integración con Carabineros.</p><div class="role">Project Manager E2E →</div></div></div>
+    <div class="case has-thumb" onclick="go('caso-codelco')"><img class="case-thumb" src="assets/img/codelco.gif" alt="" loading="lazy" /><div class="case-body"><div class="cat">Madurez · Minería</div><h3>OPM3 Codelco</h3><p>Evaluación de madurez sobre 105 facilitadores OPM3 en divisiones de la minera de cobre más grande del mundo.</p><div class="role">Líder técnico y metodológico →</div></div></div>
+  </div></div></section>
+</div>
+
+<!-- CASE: COPEC -->
+<div class="page" id="caso-copec"><section class="phero"><div class="wrap case-detail">
+  <span class="back" onclick="go('casos')">← Volver a casos</span>
+  <div class="meta">Fintech · Defensa · SAP</div>
+  <h1>App COPEC — Muevo Empresas</h1>
+  <p class="client">Plataforma de gestión de combustible para el segmento FF.AA. · Copec Industrial</p>
+  <h3>El contexto</h3>
+  <p>Muevo Empresas es la plataforma transaccional de Copec para clientes con flotas industriales de alto volumen — una de las más grandes de Latinoamérica. Dentro de ese ecosistema, las Fuerzas Armadas representan uno de los clientes más complejos: flotas de aviones, buques y maquinaria pesada de múltiples ramas, cada una con sus propios contratos, cupos y requerimientos de trazabilidad institucional.</p>
+  <h3>El desafío</h3>
+  <p>El abastecimiento de las FF.AA. vivía en un modelo manual: órdenes de compra en papel, gestión telefónica de cupos y conciliaciones en planillas, sin visibilidad en tiempo real. Digitalizarlo implicaba respetar una estructura institucional rígida, múltiples niveles de autorización y dos modelos de pago radicalmente distintos.</p>
+  <h3>Mi rol</h3>
+  <p>Participé como <b>directora de proyecto y referente técnico E2E</b>, desde el levantamiento de requerimientos hasta la puesta en producción: workshops con operadores logísticos y equipos financieros de cada rama, mapeo del flujo AS-IS y diseño del TO-BE.</p>
+  <div class="pillars">
+    <div class="pillar"><b>Producto 1 — Prepago FF.AA.</b><span>Tarjeta con carga de saldo vía OC institucional y descuento en tiempo real al despacho, con saldo visible por unidad y rama.</span></div>
+    <div class="pillar"><b>Producto 2 — Post-pago FF.AA.</b><span>Línea de crédito por contrato, conciliación automática contra SAP FI y factura consolidada por rama al cierre del ciclo.</span></div>
+  </div>
+  <h3>La arquitectura</h3>
+  <p>Sobre el core SAP ECC (MM, SD, FI, CO/PS) conectado a Muevo Empresas vía capa REST/SOAP sobre SAP PI/PO, con BAPIs e IDocs. Frontend en Angular 15+ con OAuth 2.0/JWT; datos en SAP HANA, PostgreSQL y Redis; entrega con Jenkins, Docker y Kubernetes sobre AWS EKS; gestión con Jira/Confluence en Scrum.</p>
+  <div class="tag-list"><span class="tg">SAP ECC</span><span class="tg">Angular 15+</span><span class="tg">AWS EKS</span><span class="tg">PI/PO · BAPIs</span><span class="tg">Scrum</span></div>
+</div></section></div>
+
+<!-- CASE: DERCO -->
+<div class="page" id="caso-derco"><section class="phero"><div class="wrap case-detail">
+  <span class="back" onclick="go('casos')">← Volver a casos</span>
+  <div class="meta">IoT · Automotriz · AWS</div>
+  <h1>Sensor Inteligente "SID" DERCO</h1>
+  <p class="client">Plataforma de telemática, IoT y seguridad vehicular · DercoCenter Chile</p>
+  <h3>El contexto</h3>
+  <p>Derco —hoy parte de Inchcape Américas— es el principal distribuidor automotriz de Chile. En un mercado con alto robo de vehículos y siniestralidad, la empresa dio un paso que pocos distribuidores han dado en Latinoamérica: desarrollar un servicio de telemática con marca propia, modelo de suscripción y ecosistema digital completo.</p>
+  <h3>Mi rol</h3>
+  <p>Participé como <b>Project Manager E2E</b>: levantamiento de requerimientos, coordinación de proveedores tecnológicos, seguimiento de implementación y gestión de la puesta en marcha — coordinando equipos internos con proveedores de hardware, conectividad y asistencia en ruta.</p>
+  <div class="pillars">
+    <div class="pillar"><b>Seguridad antirrobo</b><span>GPS permanente, cortaencendido remoto y protocolo de recuperación con transmisión en tiempo real a OS-9 de Carabineros.</span></div>
+    <div class="pillar"><b>eCall automático</b><span>Sensor de choque que detecta colisiones y activa alerta automática a la central, coordinando ambulancia o grúa sin intervención del conductor.</span></div>
+    <div class="pillar"><b>Telemetría</b><span>Registro de viajes, velocidad, estimación de consumo y comparación de períodos, visible en tiempo real desde la app.</span></div>
+    <div class="pillar"><b>Asistencia en ruta 24/7</b><span>Más de 20 servicios operados a nivel nacional: grúa, batería, cerrajería, chofer de reemplazo y más.</span></div>
+  </div>
+  <h3>La arquitectura</h3>
+  <p>Dispositivo con GPS, módulo GSM/4G, acelerómetro y relay de cortaencendido. Backend sobre AWS (us-east-1) con S3 y API REST como capa de integración; central de monitoreo 24/7 conectada a OS-9. Apps nativas iOS y Android + panel web. Gestión con Jira/Confluence en Scrum.</p>
+  <p class="pull-quote">Hardware en el auto. Cloud en AWS. App en el bolsillo. Carabineros en el loop.</p>
+  <div class="tag-list"><span class="tg">IoT · GSM/4G</span><span class="tg">AWS</span><span class="tg">iOS · Android</span><span class="tg">API REST</span><span class="tg">Scrum</span></div>
+</div></section></div>
+
+<!-- CASE: CODELCO -->
+<div class="page" id="caso-codelco"><section class="phero"><div class="wrap case-detail">
+  <span class="back" onclick="go('casos')">← Volver a casos</span>
+  <div class="meta">Madurez Organizacional · Minería</div>
+  <h1>Medición OPM3 Codelco</h1>
+  <p class="client">Madurez en gestión organizacional de proyectos · Vicepresidencia de Proyectos, Codelco</p>
+  <h3>El contexto</h3>
+  <p>Codelco es la mayor productora de cobre del mundo, con un portafolio de inversiones sobre US$10.000 millones y múltiples divisiones, cada una con su propia gobernanza. La Vicepresidencia de Proyectos encargó una evaluación integral de madurez aplicando el estándar OPM3 Third Edition del PMI.</p>
+  <h3>El desafío</h3>
+  <p>El problema no era la ausencia de marcos, sino la falta de evidencia objetiva sobre cuánto esas capacidades estaban realmente estandarizadas, medidas y controladas en cada división. Sin línea base común, era imposible comparar madurez o priorizar inversiones de mejora.</p>
+  <h3>Mi rol</h3>
+  <p>Participé como <b>líder técnico y metodológico</b>, con responsabilidad end-to-end: diseño del instrumento, planificación de workshops, informes de brechas divisionales y el roadmap de mejora corporativo. Adaptamos los 105 Facilitadores Organizacionales del OPM3 al lenguaje y sistemas de Codelco sin perder fidelidad al estándar.</p>
+  <h3>El modelo de análisis</h3>
+  <p>Instrumento de doble capa (ejecutiva y técnica) sobre 7 dimensiones, evaluando cada FO en los 4 niveles SMCI — Estandarizar, Medir, Controlar, Mejorar. Las brechas se clasificaron en críticas y significativas, consolidadas en matrices de análisis cruzado por división, con enfoque de consultoría Big Four y entregables diferenciados por audiencia.</p>
+  <p class="pull-quote">Por primera vez Codelco tuvo una línea base objetiva y comparable entre divisiones — y un roadmap con quick wins desde el día uno.</p>
+  <div class="tag-list"><span class="tg">OPM3 3rd Ed.</span><span class="tg">105 FOs</span><span class="tg">7 dimensiones</span><span class="tg">SMCI</span><span class="tg">Big Four approach</span></div>
+</div></section></div>
+
+<!-- ============ NOSOTROS / CV ============ -->
+<div class="page" id="nosotros">
+  <section class="phero"><div class="wrap"><span class="eyebrow">Nosotros</span><h1>Quiénes <em>somos</em>.</h1><p class="sub">Consultora boutique fundada por Dana Mardones — más de 15 años liderando tecnología, IA y proyectos complejos en industrias donde el error cuesta caro.</p></div></section>
+  <section style="padding-top:10px"><div class="wrap cv-grid">
+    <div class="cv-side">
+      <div class="cv-card">
+        <img src="assets/img/dana-mardones.png" alt="Dana Mardones" class="cv-photo" />
+        <div class="big">15<small>+</small></div>
+        <h3>Dana Mardones</h3>
+        <div class="r">Senior Technology &amp; AI Delivery · PMP · PRINCE2 · MSc Manchester</div>
+        <div class="contact">
+          <span>📍 Patagonia, Chile</span>
+          <span>📞 +56 9 4141 1832</span>
+          <span>✉️ danimardon@gmail.com</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="cv-block">
+        <h3>Quiénes somos</h3>
+        <p class="cv-lead">DANA&amp;CO es una consultora boutique de tecnología. No vendemos slides: llevamos problemas complejos a producción — desde plataformas de decisión con IA en fintech global hasta programas SAP de escala masiva, IoT automotriz y mediciones de madurez OPM3 en minería.</p>
+        <p class="cv-lead">Nuestro criterio nace de +15 años y decenas de proyectos en minería, energía, automotriz, defensa y servicios financieros. Hoy ese mismo estándar lo aplicamos a agentes de IA, automatización y liderazgo tecnológico ejecutivo — con la franqueza de decir qué conviene implementar primero y qué no.</p>
+      </div>
+      <div class="cv-block">
+        <h3>Experiencia destacada</h3>
+        <div class="cv-item"><div class="role">Directora de proyecto · Referente técnico E2E</div><div class="org">App COPEC — Muevo Empresas · Copec Industrial</div><p>Diseño e implementación del módulo de gestión de combustible para el segmento FF.AA., con integración profunda al core SAP.</p></div>
+        <div class="cv-item"><div class="role">Project Manager E2E</div><div class="org">Sensor Inteligente DERCO · DercoCenter</div><p>Plataforma de telemática, IoT y seguridad vehicular con cloud AWS, apps nativas e integración con Carabineros.</p></div>
+        <div class="cv-item"><div class="role">Líder técnico y metodológico</div><div class="org">Medición OPM3 · Vicepresidencia de Proyectos, Codelco</div><p>Evaluación de madurez organizacional sobre 105 facilitadores OPM3 en divisiones de la mayor minera de cobre del mundo.</p></div>
+        <div class="cv-item"><div class="role">Senior Technology &amp; AI Delivery Manager</div><div class="org">Experian · 2023 – actual</div><p>Plataformas de credit decisioning con IA para banca US. LLM, RAG, PMO y equipos distribuidos.</p></div>
+        <div class="cv-item"><div class="role">Technology Project Manager Director</div><div class="org">COPEC · Muevo Empresas</div><p>Programa digital a escala masiva integrado a SAP ECC y AWS.</p></div>
+        <div class="cv-item"><div class="role">Docente MSc Project Management</div><div class="org">Universidad Católica del Norte · desde 2019</div><p>Metodología, proyectos complejos y gestión de portafolios.</p></div>
+        <div class="cv-item"><div class="role">OPM3 Technology Implementation Lead</div><div class="org">Codelco · Vicepresidencia de Proyectos</div><p>Medición de madurez organizacional en divisiones mineras — instrumentos digitales y roadmap corporativo.</p></div>
+        <div class="cv-item"><div class="role">National PMO Director</div><div class="org">Ministerio de Transportes y Telecomunicaciones · Chile</div><p>Diseño e implementación de la primera PMO formal del ministerio y gobernanza de portafolio nacional.</p></div>
+      </div>
+      <div class="cv-block">
+        <h3>Capacidades</h3>
+        <div class="skill-tags">
+          <span>Liderazgo de proyectos E2E</span><span>IA &amp; automatización</span><span>Arquitectura de software</span><span>SAP</span><span>AWS · Cloud</span><span>IoT</span><span>OPM3 · CMMI</span><span>Scrum · Agile</span><span>PMO &amp; AMO</span><span>Project Recovery</span>
+        </div>
+        <div class="skill-tags" style="margin-top:12px"><span>PMP</span><span>PRINCE2</span><span>MSc Manchester</span><span>Disciplined Agile</span><span>Primavera P6</span></div>
+        <p style="margin-top:16px"><a href="https://www.linkedin.com/in/danamardones/" target="_blank" rel="noopener" style="text-decoration:underline">linkedin.com/in/danamardones</a></p>
+      </div>
+      <div style="margin-top:20px"><a onclick="go('contacto')" class="btn btn-primary">Trabajemos juntos →</a></div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ============ CONTACTO ============ -->
+<div class="page" id="contacto">
+  <section class="final" style="padding-top:90px">
+    <div class="wrap">
+      <span class="eyebrow" style="justify-content:center">Contacto</span>
+      <h2>Conversemos tu <em>próximo proyecto</em>.</h2>
+      <p>Agenda un diagnóstico sin costo. Te digo con franqueza por dónde partir y qué te conviene de verdad.</p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:30px">
+        <a href="https://wa.me/56941411832" class="btn btn-primary">Escríbeme por WhatsApp →</a>
+        <a href="mailto:danimardon@gmail.com" class="btn btn-ghost">Enviar email</a>
+      </div>
+      <p style="font-size:.95rem">📞 +56 9 4141 1832 · ✉️ danimardon@gmail.com · 📍 Patagonia, Chile</p>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap foot-in">
+    <div>
+      <div class="foot-logo"><img src="assets/img/logo.svg" alt="DANA&CO" /></div>
+      <p style="opacity:.7;font-size:.9rem;margin-top:10px;max-width:260px">Consultoría boutique de tecnología, IA y automatización. Patagonia, Chile.</p>
+    </div>
+    <div class="foot-cols">
+      <div class="foot-col"><h5>Productos</h5><a onclick="go('studio')">AI Automation Studio</a><a onclick="go('cto')">Gerente TI as a Service</a><a onclick="go('tech')">Tech Solutions</a><a onclick="go('audit')">AI Operations Audit</a></div>
+      <div class="foot-col"><h5>Empresa</h5><a onclick="go('casos')">Casos de éxito</a><a onclick="go('nosotros')">Nosotros</a><a onclick="go('contacto')">Contacto</a></div>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">© 2026 Dana&Co · Hecho con criterio, no con improvisación.</div>
+</footer>
+
+
+<a class="wa-float" href="https://wa.me/56941411832?text=Hola%2C%20quiero%20conversar%20sobre%20Dana%20AI%20Studio" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<script src="js/dana-app.js"></script>
+</body>
+</html>
