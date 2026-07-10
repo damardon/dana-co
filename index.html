@@ -6,101 +6,138 @@
 <title>DANA&CO — IA, automatización y liderazgo tecnológico</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="css/dana-gotra.css" />
-<link rel="icon" href="assets/img/danaco.jpg" sizes="32x32" />
+<link rel="stylesheet" href="css/dana-gotra.css?v=5" />
+<!-- build: 2026-05-27b -->
+<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
 </head>
 <body>
 
 <nav>
-  <div class="wrap nav-in">
-    <div class="logo" onclick="go('inicio')"><img src="assets/img/logo.svg" alt="DANA&CO" /></div>
+  <div class="nav-in">
+    <a class="logo" href="#" onclick="go('inicio'); return false;" aria-label="DANA&CO inicio">
+      <img src="assets/img/logo-danafinal.png" alt="DANA&CO" width="300" height="80" />
+    </a>
     <div class="nav-links" id="navlinks">
-      <a onclick="go('studio')">AI Automation Studio</a>
-      <a onclick="go('cto')">Gerente TI as a Service</a>
+      <a onclick="go('studio')">DANA AI Studio</a>
+      <a onclick="go('cto')">GERENTE-TI As A Service</a>
       <div class="dd">
         <a>Servicios ▾</a>
         <div class="dd-menu">
-<a onclick="go('tech')"><b>Dana Tech Solutions</b><span>Software factory + IoT</span></a>
-          <a onclick="go('audit')"><b>Dana Audit</b><span>AI Operations Audit</span></a>
+          <a onclick="go('tech')"><b>DANA TECH SOLUTIONS</b><span>Software factory + IoT</span></a>
+          <a onclick="go('audit')"><b>DANA AUDIT</b><span></span></a>
         </div>
       </div>
       <a onclick="go('casos')">Casos</a>
       <a onclick="go('nosotros')">Nosotros</a>
-      <a onclick="go('contacto')" class="nav-cta">Agenda diagnóstico</a>
     </div>
-    <button class="burger" id="burger"><span></span><span></span><span></span></button>
+    <button class="burger" id="burger" type="button" aria-label="Abrir menú"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
 <!-- ============ INICIO ============ -->
 <div class="page active" id="inicio">
   <header class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <p class="tagline">Consultora boutique · +15 años liderando tecnologías</p>
-        <h1 class="gotra-h1">
-          <span>somos expertos</span>
-          <span class="dim">en tecnología</span>
-        </h1>
-        <p class="lead">Transformamos problemas complejos en soluciones que operan en producción — IA, automatización y liderazgo tecnológico con el mismo estándar que exigen minería, fintech y energía.</p>
-        <div class="hero-cta">
-          <a onclick="go('studio')" class="btn btn-primary">Ver AI Automation Studio →</a>
-          <a onclick="go('contacto')" class="btn btn-ghost">Agenda un diagnóstico</a>
-        </div>
-      </div>
-      <div>
-        <div class="portrait-card">
-          <img src="assets/img/dana-mardones.png" alt="Dana Mardones" />
-          <div class="num">15<span class="accent">+</span></div>
-          <div class="lbl">años liderando tecnología en industrias críticas</div>
-          <div class="portrait-mini">
-            <div><b>E2E</b><span>del problema a producción</span></div>
-            <div><b>SAP·AWS</b><span>stacks enterprise</span></div>
-            <div><b>IA</b><span>integrada al ciclo</span></div>
+    <div class="hero-layout">
+      <div class="hero-copy">
+        <div class="hero-copy-in">
+          <p class="tagline">Consultora boutique · +15 años liderando tecnologías</p>
+          <h1 class="gotra-h1">
+            <span>Somos expertos</span>
+            <span class="dim">en tecnología</span>
+          </h1>
+          <p class="lead">Transformamos problemas complejos en soluciones que operan en producción — IA, automatización y liderazgo tecnológico con el mismo estándar que exigen minería, fintech y energía.</p>
+          <div class="hero-cta">
+            <a onclick="go('studio')" class="btn btn-primary">Ver DANA AI Studio →</a>
+            <a onclick="go('contacto')" class="btn btn-ghost">Contacto</a>
           </div>
         </div>
       </div>
+      <div class="hero-visual">
+        <div class="hero-carousel" id="heroCarousel" aria-label="Galería principal">
+          <img src="assets/img/hero-slide-1.jpg" alt="Proyectos Dana&Co" class="active" />
+          <img src="assets/img/hero-slide-2.jpg" alt="Sensor inteligente y telemática" />
+          <img src="assets/img/dana-mardones.png" alt="Dana Mardones" />
+          <img src="assets/img/studio-visual.png" alt="AI Automation Studio" />
+        </div>
+      </div>
     </div>
-    <div class="strip"><div class="wrap strip-in">
-      <span class="t">Experiencia comprobada en</span>
-      <span class="i">Minería</span><span class="i">Fintech</span><span class="i">Energía</span>
-      <span class="i">Automotriz</span><span class="i">Defensa</span><span class="i">Telecom</span><span class="i">Software</span>
-    </div></div>
   </header>
 
-  <section>
+  <div class="exp-strip" aria-label="NUESTRAS INDUSTRIAS">
+    <p class="exp-strip-label">NUESTRAS INDUSTRIAS</p>
+    <div class="exp-strip-viewport">
+      <div class="exp-strip-track" id="expCarousel">
+        <span>Minería</span><span>Fintech</span><span>Energía</span><span>Automotriz</span>
+        <span>Acuicultura</span><span>Telecom</span><span>Software</span><span>Retail</span>
+        <span>Salud</span><span>Educación</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="products-section">
     <div class="wrap">
-      <div class="sec-head">
+      <div class="sec-head sec-head--center">
         <span class="eyebrow">Cuatro formas de trabajar juntos</span>
-        <h2>Productos, no promesas.</h2>
+        <h2>4 Productos, 4 experiencias comprobadas.</h2>
         <p>Cada submarca resuelve un problema distinto. Empieza por donde más te duele.</p>
       </div>
 
-            <div class="brandstack">
-        <div class="brandcard studio" onclick="go('studio')">
-          <span class="tag">★ Lo más solicitado</span>
-          <h3>Dana AI Studio</h3>
-          <p>Agentes de IA por rol — inbound, outbound, preventa y postventa — en WhatsApp, CRM y calendario. Trabajan 24/7 con reglas de negocio claras.</p>
-          <span class="go">Ver demos y planes →</span>
-        </div>
-        <div class="brandcard" onclick="go('cto')">
-          <span class="tag">Producto</span>
-          <h3>Gerente TI as a Service</h3>
-          <p>Liderazgo tecnológico ejecutivo: arquitectura, proveedores, seguridad y roadmap de IA — sin contratar un gerente interno.</p>
-          <span class="go">Conocer más →</span>
-        </div>
-        <div class="brandcard" onclick="go('tech')">
-          <span class="tag">Producto</span>
-          <h3>Dana Tech Solutions</h3>
+      <div class="products-grid">
+        <article class="product-card product-card--studio" onclick="go('studio')" role="button" tabindex="0">
+          <div class="product-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="16" r="8" stroke="currentColor" stroke-width="2"/><path d="M8 40c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M32 12l4-4M36 20h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <span class="product-tag">★ Lo más solicitado</span>
+          <h3>DANA AI STUDIO</h3>
+          <p>Agentes de IA por rol — Asistente de Soporte, Asistente de Ventas, preventa y postventa — en WhatsApp, CRM y calendario.</p>
+          <span class="product-go">Ver demos y planes →</span>
+        </article>
+        <article class="product-card product-card--cto" onclick="go('cto')" role="button" tabindex="0">
+          <div class="product-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="10" y="8" width="28" height="32" rx="2" stroke="currentColor" stroke-width="2"/><path d="M18 18h12M18 24h8M18 30h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <span class="product-tag">Producto</span>
+          <h3>DANA GERENTE TI AS A SERVICE (AAS)</h3>
+          <p>Liderazgo tecnológico ejecutivo: arquitectura, proveedores, seguridad y roadmap de IA.</p>
+          <span class="product-go">Conocer más →</span>
+        </article>
+        <article class="product-card product-card--tech" onclick="go('tech')" role="button" tabindex="0">
+          <div class="product-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M14 36L24 8l10 28" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M18 28h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <span class="product-tag">Producto</span>
+          <h3>DANA TECH SOLUTIONS</h3>
           <p>Software factory end-to-end e integración IoT. De la idea al producto en producción.</p>
-          <span class="go">Conocer más →</span>
-        </div>
-        <div class="brandcard" onclick="go('audit')">
-          <span class="tag">Puerta de entrada</span>
-          <h3>Dana Audit — AI Operations Audit</h3>
-          <p>Diagnóstico de brechas, roadmap de automatización con IA y plan de digitalización en 2–4 semanas.</p>
-          <span class="go">Empezar por aquí →</span>
-        </div>
+          <span class="product-go">Conocer más →</span>
+        </article>
+        <article class="product-card product-card--audit" onclick="go('audit')" role="button" tabindex="0">
+          <div class="product-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="2"/><path d="M24 14v10l7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <span class="product-tag">Puerta de entrada</span>
+          <h3>DANA AUDIT</h3>
+          <p>Diagnóstico de brechas, roadmap de automatización con IA y plan en 2–4 semanas.</p>
+          <span class="product-go">Empezar por aquí →</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-section" aria-label="Tecnología que usamos">
+    <div class="wrap tech-section-head">
+      <span class="eyebrow">Stack</span>
+      <h2>Tecnología que usamos</h2>
+    </div>
+    <div class="tech-strip-viewport">
+      <div class="tech-strip-track" id="techCarousel">
+        <div class="tech-logo"><img src="assets/img/tech/whatsapp.svg" alt="WhatsApp" width="40" height="40" loading="lazy" /><span>WhatsApp</span></div>
+        <div class="tech-logo"><img src="assets/img/tech/zapier.svg" alt="Zapier" width="40" height="40" loading="lazy" /><span>Zapier</span></div>
+        <div class="tech-logo"><img src="assets/img/tech/n8n.svg" alt="n8n" width="40" height="40" loading="lazy" /><span>n8n</span></div>
+        <div class="tech-logo"><img src="assets/img/tech/copilot.svg" alt="Microsoft Copilot" width="40" height="40" loading="lazy" /><span>Copilot</span></div>
+        <div class="tech-logo"><img src="assets/img/tech/microsoft.svg" alt="Microsoft" width="40" height="40" loading="lazy" /><span>Microsoft</span></div>
+        <div class="tech-logo"><img src="assets/img/tech/office.svg" alt="Microsoft Office" width="40" height="40" loading="lazy" /><span>Office</span></div>
+        <div class="tech-logo"><img src="assets/img/tech/shopify.svg" alt="Shopify" width="40" height="40" loading="lazy" /><span>Shopify</span></div>
+        <div class="tech-logo"><img src="assets/img/tech/excel.svg" alt="Excel" width="40" height="40" loading="lazy" /><span>Excel</span></div>
       </div>
     </div>
   </section>
@@ -114,10 +151,7 @@
         <div class="case has-thumb" onclick="go('caso-codelco')"><img class="case-thumb" src="assets/img/codelco.gif" alt="OPM3 Codelco" loading="lazy" /><div class="case-body"><div class="cat">Madurez · Minería</div><h3>OPM3 Codelco</h3><p>Evaluación de madurez organizacional sobre 105 facilitadores OPM3 en divisiones de la minera más grande del mundo.</p><div class="role">Líder técnico y metodológico</div></div></div>
       </div>
       <div class="trust-logos">
-        <span class="trust-label">Trayectoria en</span>
-        <img src="assets/img/logo-experian.png" alt="Experian" height="28" loading="lazy" />
-        <img src="assets/img/logo-codelco.png" alt="Codelco" height="28" loading="lazy" />
-      </div>
+        </div>
     </div>
   </section>
 
@@ -134,133 +168,204 @@
 <div class="page" id="studio">
   <section class="phero">
     <div class="wrap">
-      <span class="eyebrow">★ Dana AI Studio</span>
+      <span class="eyebrow phero-brand">★ Dana AI Studio</span>
       <h1>IA que responde, califica y <em>vende automáticamente</em>.</h1>
       <p class="sub">Implementamos asistentes inteligentes y automatizaciones que atienden a tus clientes 24/7, capturan leads y derivan a tu equipo solo las oportunidades reales — sin contratar más personal.</p>
     </div>
   </section>
 
-  <section style="padding-top:10px">
+  <section class="studio-block">
     <div class="wrap">
-      <div class="whofor">
-        <h3>Para quién es</h3>
-        <div class="who-grid">
-          <div class="who"><span class="dot"></span>Clínicas dentales, estética y kinesiología</div>
-          <div class="who"><span class="dot"></span>Inmobiliarias y corredores de propiedades</div>
-          <div class="who"><span class="dot"></span>Academias, cursos y educación</div>
-          <div class="who"><span class="dot"></span>Servicios técnicos y mantenimiento</div>
-          <div class="who"><span class="dot"></span>Restaurantes, banquetería y eventos</div>
-          <div class="who"><span class="dot"></span>Estudios de abogados, contadores y asesorías</div>
+      <div id="dana-demos-widget" class="adw-section" data-piece="pieza-whatsapp-interactivo-v1">
+        <div class="adw-section-head">
+          <h2 class="adw-title">Agentes que se adaptan a <span>tu negocio</span></h2>
+          <p class="adw-subtitle">Conversa en tiempo real con un agente especializado por industria.</p>
         </div>
-      </div>
-
-      <h2 style="font-size:1.7rem;margin:10px 0 6px">Cómo funciona</h2>
-      <div class="flow">
-        <div class="flow-step"><div class="s">1</div><p>Tu cliente escribe por WhatsApp</p></div>
-        <div class="flow-step"><div class="s">2</div><p>La IA responde al instante</p></div>
-        <div class="flow-step"><div class="s">3</div><p>El lead queda registrado</p></div>
-        <div class="flow-step"><div class="s">4</div><p>El sistema agenda o deriva</p></div>
-        <div class="flow-step"><div class="s">5</div><p>Tu equipo recibe el resumen</p></div>
-      </div>
-
-      
-      <div id="dana-demos-widget">
         <div class="adw-container">
           <div class="adw-left">
-            <span class="adw-badge">Demos interactivas</span>
-            <h2 class="adw-title">Agentes que se adaptan<br>a <span>tu operación</span></h2>
-            <p class="adw-subtitle">Explora cómo cada agente resuelve un tramo de tu embudo comercial — con conversaciones reales en WhatsApp.</p>
-            <p class="adw-tabs-label">Agentes</p>
-            <div class="adw-tabs">
-              <button type="button" class="adw-tab active" data-adw="inbound" onclick="danaDemoSwitch('inbound')"><span class="adw-tab-icon">S</span> Sofía · Inbound</button>
-              <button type="button" class="adw-tab" data-adw="outbound" onclick="danaDemoSwitch('outbound')"><span class="adw-tab-icon">M</span> Mateo · Outbound</button>
-              <button type="button" class="adw-tab" data-adw="preventa" onclick="danaDemoSwitch('preventa')"><span class="adw-tab-icon">V</span> Valentina · Preventa</button>
-              <button type="button" class="adw-tab" data-adw="postventa" onclick="danaDemoSwitch('postventa')"><span class="adw-tab-icon">C</span> Carlos · Postventa</button>
+            <p class="adw-tabs-label">Industrias</p>
+            <div class="adw-ind-tabs">
+              <button type="button" class="adw-ind-tab active" data-industry="turismo" aria-label="Seleccionar agente de Turismo">Turismo</button>
+              <button type="button" class="adw-ind-tab" data-industry="retail" aria-label="Seleccionar agente de Retail">Retail</button>
+              <button type="button" class="adw-ind-tab" data-industry="agroalimentos" aria-label="Seleccionar agente de Agroalimentos">Agroalimentos</button>
+              <button type="button" class="adw-ind-tab" data-industry="servicios" aria-label="Seleccionar agente de Servicios">Servicios</button>
+              <button type="button" class="adw-ind-tab" data-industry="salud" aria-label="Seleccionar agente de Salud">Salud</button>
             </div>
-            <ul class="adw-features" id="adw-features">
-              <li>Responde al instante y califica la intención del cliente</li>
-              <li>Registra el lead y deriva solo oportunidades reales</li>
-              <li>Integración con calendario, CRM y resumen al equipo</li>
-            </ul>
+            <p class="adw-tabs-label">Capacidades del agente</p>
+            <ul class="adw-features" id="adw-features"></ul>
           </div>
           <div class="adw-right">
-            <div class="adw-panel active" id="adw-inbound">
-              <div class="dana-phone"><div class="dana-phone-head"><span class="dana-phone-dot">S</span> Sofía · Inbound</div><div class="dana-phone-body"><div class="dana-msg in">Hola, vi su servicio para clínicas. ¿Atienden por Isapre?</div><div class="dana-msg out">Sí. ¿Prefiere horario AM o PM para una evaluación inicial?</div><div class="dana-msg in">AM, por favor.</div><div class="dana-msg out">Agendado martes 10:30. Resumen enviado a su CRM.</div></div></div>
-            </div>
-            <div class="adw-panel" id="adw-outbound">
-              <div class="dana-phone"><div class="dana-phone-head"><span class="dana-phone-dot">M</span> Mateo · Outbound</div><div class="dana-phone-body"><div class="dana-msg out">Hola Ana, le escribo por su consulta de marzo sobre automatización.</div><div class="dana-msg in">Sí, lo dejamos pendiente.</div><div class="dana-msg out">¿Le sirve una llamada de 15 min el jueves?</div><div class="dana-msg in">Sí, en la tarde.</div></div></div>
-            </div>
-            <div class="adw-panel" id="adw-preventa">
-              <div class="dana-phone"><div class="dana-phone-head"><span class="dana-phone-dot">V</span> Valentina · Preventa</div><div class="dana-phone-body"><div class="dana-msg in">Necesito cotización para 40 usuarios.</div><div class="dana-msg out">Plan Pro: $4.2M + IVA/mes. PDF adjunto con alcance.</div><div class="dana-msg in">Envíen a compras.</div><div class="dana-msg out">Hecho. Aviso a su ejecutivo asignado.</div></div></div>
-            </div>
-            <div class="adw-panel" id="adw-postventa">
-              <div class="dana-phone"><div class="dana-phone-head"><span class="dana-phone-dot">C</span> Carlos · Postventa</div><div class="dana-phone-body"><div class="dana-msg in">No puedo generar el informe mensual.</div><div class="dana-msg out">Corregido: permiso de rol actualizado. ¿Puede reintentar?</div><div class="dana-msg in">Listo, gracias.</div><div class="dana-msg out">Su plan renueva en 30 días — ¿envío propuesta de upgrade?</div></div></div>
+            <div class="dana-phone-wrap">
+              <div class="dana-phone">
+                <div class="dana-phone-notch"></div>
+                <div class="dana-phone-head">
+                  <span class="dana-phone-dot" id="adw-phone-dot">T</span>
+                  <span id="adw-phone-agent-name">Vale · Turismo IA</span>
+                  <span class="dana-phone-online" id="adw-phone-status">En línea</span>
+                </div>
+                <div class="dana-phone-body" id="adw-phone-body"></div>
+                <form class="dana-phone-input" id="adw-chat-form">
+                  <label for="adw-chat-input" class="sr-only">Escribe un mensaje para el agente</label>
+                  <input type="text" id="adw-chat-input" maxlength="500" placeholder="Escribe un mensaje" autocomplete="off" />
+                  <button type="submit" id="adw-chat-send" aria-label="Enviar mensaje">➤</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <h2 style="font-size:1.7rem;margin:36px 0 18px">Planes WhatsApp IA</h2>
-      <div class="packs">
-        <div class="pack">
-          <span class="pack-tag">Básico · Entrada rápida</span>
-          <h3>WhatsApp IA Básico</h3>
-          <p class="for">Para negocios con muchas consultas repetidas que quieren dejar de responder a mano.</p>
-          <ul>
-            <li>Bot de bienvenida</li>
-            <li>Respuestas a preguntas frecuentes</li>
-            <li>Derivación a un humano cuando se necesita</li>
-            <li>Registro de leads en Google Sheets</li>
-          </ul>
-          <div class="pack-price"><b>$350.000 – $700.000</b><span>setup · mantención $80.000–$180.000 /mes</span></div>
+      <div class="industries-block">
+        <div class="sec-head">
+          <span class="eyebrow">Sectores</span>
+          <h2>Para quién es</h2>
+          <p>Haz clic en cada sector para ver el foco de automatización.</p>
         </div>
-        <div class="pack featured">
-          <span class="pack-tag">Ventas · Más vendido</span>
-          <h3>WhatsApp IA Ventas</h3>
-          <p class="for">Para negocios que quieren convertir consultas en ventas, no solo responder.</p>
-          <ul>
-            <li>Todo lo del plan Básico</li>
-            <li>Calificación automática de leads</li>
-            <li>Integración con calendario y CRM</li>
-            <li>Seguimiento automático</li>
-            <li>Dashboard para el vendedor</li>
-          </ul>
-          <div class="pack-price"><b>$900.000 – $1.800.000</b><span>setup · mantención $200.000–$450.000 /mes</span></div>
+        <div class="industry-grid">
+          <button type="button" class="industry-chip active" data-desc="Agenda, recordatorios y calificación de pacientes por Isapre.">
+            <span class="industry-icon">⚕</span><strong>Clínicas y salud</strong><small>Estética · kinesiología</small>
+          </button>
+          <button type="button" class="industry-chip" data-desc="Cotizaciones por volumen, listas de precios y seguimiento a distribuidores.">
+            <span class="industry-icon">📦</span><strong>Comercializadoras</strong><small>Mayorista · canal B2B</small>
+          </button>
+          <button type="button" class="industry-chip" data-desc="Pedidos internacionales, documentación y estado de embarques por WhatsApp.">
+            <span class="industry-icon">🌐</span><strong>Importadoras y exportadoras</strong><small>Comercio exterior</small>
+          </button>
+          <button type="button" class="industry-chip" data-desc="Stock, carritos, checkout y postventa conectados a tu tienda.">
+            <span class="industry-icon">🛒</span><strong>Retail y e-commerce</strong><small>Tiendas físicas y online</small>
+          </button>
+          <button type="button" class="industry-chip" data-desc="Automatización accesible sin equipo técnico interno: ventas, soporte y cobranza.">
+            <span class="industry-icon">🏢</span><strong>PyMEs en general</strong><small>Pequeñas y medianas empresas</small>
+          </button>
+          <button type="button" class="industry-chip" data-desc="Inscripciones, recordatorios de clases y respuestas a programas.">
+            <span class="industry-icon">🎓</span><strong>Educación</strong><small>Academias y cursos</small>
+          </button>
+          <button type="button" class="industry-chip" data-desc="Órdenes de trabajo, técnicos en terreno y confirmación al cliente.">
+            <span class="industry-icon">🔧</span><strong>Servicios técnicos</strong><small>Mantenimiento · reparación</small>
+          </button>
+          <button type="button" class="industry-chip" data-desc="Pedidos, reservas y eventos con menú y pagos integrados.">
+            <span class="industry-icon">🍽</span><strong>Restaurantes y eventos</strong><small>Banquetería</small>
+          </button>
+          <button type="button" class="industry-chip" data-desc="Triaje de consultas, agendamiento y derivación a profesional.">
+            <span class="industry-icon">⚖</span><strong>Asesorías profesionales</strong><small>Abogados · contadores</small>
+          </button>
         </div>
-        <div class="pack">
-          <span class="pack-tag">Pro · Operación compleja</span>
-          <h3>WhatsApp IA Pro</h3>
-          <p class="for">Para empresas con múltiples áreas y operación más sofisticada.</p>
-          <ul>
-            <li>Agentes IA con base de conocimiento (RAG)</li>
-            <li>Enrutamiento inteligente por área</li>
-            <li>Reportes y logs</li>
-            <li>Revisión humana y múltiples flujos</li>
-          </ul>
-          <div class="pack-price"><b>$2.000.000 – $5.000.000+</b><span>setup · mantención desde $500.000 /mes</span></div>
+        <p class="industry-detail" id="industry-detail">Agenda, recordatorios y calificación de pacientes por Isapre.</p>
+      </div>
+
+      <div class="flow-play">
+        <div class="sec-head">
+          <span class="eyebrow">Proceso</span>
+          <h2>Cómo funciona</h2>
+          <p>Cinco pasos — te los explica Dana, nuestra guía del flujo.</p>
+        </div>
+        <div class="flow-play-inner">
+          <div class="flow-mascot" aria-hidden="true">
+            <div class="mascot-face">🤖</div>
+            <p class="mascot-name">Dana</p>
+            <p class="mascot-tip" id="flow-mascot-tip">¡Hola! Tu cliente escribe por WhatsApp…</p>
+          </div>
+          <div class="flow-track">
+            <div class="flow-line" aria-hidden="true"></div>
+            <div class="flow-node lit" data-tip="¡Hola! Tu cliente escribe por WhatsApp…">
+              <span class="flow-emoji">💬</span><span class="flow-num">1</span>
+              <p>Cliente escribe</p>
+            </div>
+            <div class="flow-node" data-tip="La IA responde en segundos, 24/7.">
+              <span class="flow-emoji">⚡</span><span class="flow-num">2</span>
+              <p>IA responde</p>
+            </div>
+            <div class="flow-node" data-tip="Cada conversación queda en tu CRM o planilla.">
+              <span class="flow-emoji">📋</span><span class="flow-num">3</span>
+              <p>Lead registrado</p>
+            </div>
+            <div class="flow-node" data-tip="Agenda reunión o deriva al ejecutivo correcto.">
+              <span class="flow-emoji">📅</span><span class="flow-num">4</span>
+              <p>Agenda o deriva</p>
+            </div>
+            <div class="flow-node" data-tip="Tu equipo recibe resumen y sigue solo lo importante.">
+              <span class="flow-emoji">✅</span><span class="flow-num">5</span>
+              <p>Resumen al equipo</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="sprint">
-        <div>
-          <span class="eyebrow">AI Automation Sprint · El comodín</span>
+      <div class="plans-block">
+        <div class="sec-head">
+          <span class="eyebrow">Implementación</span>
+          <h2>Planes WhatsApp IA</h2>
+          <p>Elige el nivel según tu volumen y complejidad.</p>
+        </div>
+        <div class="plan-cards">
+          <article class="plan-card plan-card--basic">
+            <div class="plan-icon">◇</div>
+            <span class="plan-tier">Básico</span>
+            <h3>WhatsApp IA Básico</h3>
+            <p class="plan-for">Consultas repetidas sin responder a mano.</p>
+            <ul class="plan-feats">
+              <li>Bot de bienvenida</li>
+              <li>FAQ automatizadas</li>
+              <li>Derivación a humano</li>
+              <li>Leads en Google Sheets</li>
+            </ul>
+            <div class="plan-price"><strong>$350k – $700k</strong><span>setup</span></div>
+            <p class="plan-maint">Mantención $80k – $180k /mes</p>
+          </article>
+          <article class="plan-card plan-card--featured">
+            <span class="plan-ribbon">Más vendido</span>
+            <div class="plan-icon">◆</div>
+            <span class="plan-tier">Ventas</span>
+            <h3>WhatsApp IA Ventas</h3>
+            <p class="plan-for">Convertir chats en ventas, no solo respuestas.</p>
+            <ul class="plan-feats">
+              <li>Todo el plan Básico</li>
+              <li>Calificación de leads</li>
+              <li>CRM y calendario</li>
+              <li>Seguimiento automático</li>
+              <li>Dashboard comercial</li>
+            </ul>
+            <div class="plan-price"><strong>$900k – $1.8M</strong><span>setup</span></div>
+            <p class="plan-maint">Mantención $200k – $450k /mes</p>
+          </article>
+          <article class="plan-card plan-card--pro">
+            <div class="plan-icon">★</div>
+            <span class="plan-tier">Pro</span>
+            <h3>WhatsApp IA Pro</h3>
+            <p class="plan-for">Operaciones con varias áreas y flujos complejos.</p>
+            <ul class="plan-feats">
+              <li>Agentes con RAG</li>
+              <li>Enrutamiento por área</li>
+              <li>Reportes y logs</li>
+              <li>Revisión humana</li>
+            </ul>
+            <div class="plan-price"><strong>$2M – $5M+</strong><span>setup</span></div>
+            <p class="plan-maint">Mantención desde $500k /mes</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="sprint sprint--fun">
+        <div class="sprint-visual" aria-hidden="true">
+          <div class="sprint-ring"><span>10</span><small>días</small></div>
+          <div class="sprint-orbit sprint-orbit--1">⚙</div>
+          <div class="sprint-orbit sprint-orbit--2">🚀</div>
+          <div class="sprint-orbit sprint-orbit--3">✦</div>
+        </div>
+        <div class="sprint-copy">
+          <span class="eyebrow phero-brand phero-brand--sm">AI Automation Sprint</span>
           <h3>Automatizamos lo que quieras, en 10 días.</h3>
-          <p>¿Tienes un proceso que le quita horas a tu equipo? Lo convertimos en una automatización de alto impacto, lista y funcionando, en dos semanas hábiles.</p>
-          <ul>
-            <li><b>Días 1–3 · Diagnóstico:</b> entendemos el proceso y definimos el de mayor retorno</li>
-            <li><b>Días 4–7 · Diseño:</b> arquitectura de la automatización e integraciones</li>
-            <li><b>Días 8–10 · Implementación:</b> construcción, pruebas y puesta en marcha</li>
-          </ul>
-        </div>
-        <div class="sprint-box">
-          <div style="font-size:.76rem;text-transform:uppercase;letter-spacing:.14em;opacity:.7;font-weight:700">Implementación</div>
-          <div class="big">10<small> días</small></div>
-          <p style="opacity:.8;font-size:.9rem;margin:8px 0 18px">Alcance y precio fijos. Cotización en 24h.</p>
-          <a onclick="go('contacto')" class="btn btn-light" style="width:100%;justify-content:center">Cotizar mi Sprint →</a>
+          <p>¿Un proceso que le quita horas a tu equipo? Lo llevamos a producción en dos semanas hábiles.</p>
+          <div class="sprint-timeline">
+            <div class="sprint-step"><b>1–3</b><span>Diagnóstico y priorización</span></div>
+            <div class="sprint-step"><b>4–7</b><span>Diseño e integraciones</span></div>
+            <div class="sprint-step"><b>8–10</b><span>Build, pruebas y go-live</span></div>
+          </div>
+          <a onclick="go('contacto')" class="btn btn-primary">Cotizar mi Sprint →</a>
         </div>
       </div>
 
-      <p style="text-align:center;margin-top:30px;color:var(--ink-soft)">¿No sabes qué automatizar primero? Empieza por la <a onclick="go('audit')" style="color:var(--accent);font-weight:700;cursor:pointer">AI Operations Audit →</a></p>
+      <p class="studio-footnote">¿No sabes qué automatizar primero? Empieza por la <a onclick="go('audit')">AI Operations Audit →</a></p>
     </div>
   </section>
 </div>
@@ -269,7 +374,7 @@
 <div class="page" id="cto">
   <section class="phero">
     <div class="wrap">
-      <span class="eyebrow">★ Dana Gerente TI as a Service</span>
+      <span class="eyebrow phero-brand">★ Dana Gerente TI as a Service</span>
       <h1>Liderazgo tecnológico senior, <em>por fracción del costo</em>.</h1>
       <p class="sub">Pon a disposición de tu empresa una CTO con +15 años de experiencia: definición de arquitectura, supervisión de producto y decisiones estratégicas de IA y automatización — sin el costo ni la espera de contratar un ejecutivo interno.</p>
     </div>
@@ -308,7 +413,7 @@
 <div class="page" id="tech">
   <section class="phero">
     <div class="wrap">
-      <span class="eyebrow">Servicios · Dana Tech Solutions</span>
+      <span class="eyebrow phero-brand">Servicios · Dana Tech Solutions</span>
       <h1>De la idea al producto <em>vivo en producción</em>.</h1>
       <p class="sub">Software factory end-to-end con IA integrada al ciclo, e integración de hardware e IoT. Lo que antes tomaba meses, hoy toma semanas — sin sacrificar calidad ni control.</p>
     </div>
@@ -330,7 +435,7 @@
 <div class="page" id="audit">
   <section class="phero">
     <div class="wrap">
-      <span class="eyebrow">Servicios · Dana Audit</span>
+      <span class="eyebrow phero-brand">Servicios · Dana Audit</span>
       <h1>AI Operations Audit — <em>el mejor primer paso</em>.</h1>
       <p class="sub">Antes de automatizar a ciegas, un diagnóstico senior de dónde estás parado y qué te conviene mover primero. Bajo compromiso, máximo criterio.</p>
     </div>
@@ -357,7 +462,7 @@
 <div class="page" id="casos">
   <section class="phero"><div class="wrap"><span class="eyebrow">Casos de éxito</span><h1>No vendemos teoría. <em>Esto lo construimos.</em></h1><p class="sub">Proyectos reales en industrias donde el error cuesta caro — defensa, automotriz, minería.</p></div></section>
   <section style="padding-top:10px"><div class="wrap"><div class="case-grid">
-    <div class="case has-thumb" onclick="go('caso-copec')"><img class="case-thumb" src="assets/img/case-copec.png" alt="" loading="lazy" /><div class="case-body"><div class="cat">Fintech · Defensa</div><h3>App COPEC — FF.AA.</h3><p>Módulo de gestión de combustible para las Fuerzas Armadas dentro de Muevo Empresas, con prepago y post-pago integrados al core SAP.</p><div class="role">Directora de proyecto · Referente técnico E2E →</div></div></div>
+    <div class="case has-thumb" onclick="go('caso-copec')"><img class="case-thumb" src="assets/img/case-copec.png" alt="" loading="lazy" /><div class="case-body"><div class="cat">Fintech · Acuicultura</div><h3>App COPEC — FF.AA.</h3><p>Módulo de gestión de combustible para las Fuerzas Armadas dentro de Muevo Empresas, con prepago y post-pago integrados al core SAP.</p><div class="role">Directora de proyecto · Referente técnico E2E →</div></div></div>
     <div class="case has-thumb" onclick="go('caso-derco')"><img class="case-thumb" src="assets/img/hero-slide-2.jpg" alt="" loading="lazy" /><div class="case-body"><div class="cat">IoT · Automotriz</div><h3>Sensor Inteligente DERCO</h3><p>Telemática y seguridad vehicular con marca propia: IoT, cloud AWS, app móvil e integración con Carabineros.</p><div class="role">Project Manager E2E →</div></div></div>
     <div class="case has-thumb" onclick="go('caso-codelco')"><img class="case-thumb" src="assets/img/codelco.gif" alt="" loading="lazy" /><div class="case-body"><div class="cat">Madurez · Minería</div><h3>OPM3 Codelco</h3><p>Evaluación de madurez sobre 105 facilitadores OPM3 en divisiones de la minera de cobre más grande del mundo.</p><div class="role">Líder técnico y metodológico →</div></div></div>
   </div></div></section>
@@ -366,7 +471,7 @@
 <!-- CASE: COPEC -->
 <div class="page" id="caso-copec"><section class="phero"><div class="wrap case-detail">
   <span class="back" onclick="go('casos')">← Volver a casos</span>
-  <div class="meta">Fintech · Defensa · SAP</div>
+  <div class="meta">Fintech · Acuicultura · SAP</div>
   <h1>App COPEC — Muevo Empresas</h1>
   <p class="client">Plataforma de gestión de combustible para el segmento FF.AA. · Copec Industrial</p>
   <h3>El contexto</h3>
@@ -437,7 +542,7 @@
         <div class="contact">
           <span>📍 Patagonia, Chile</span>
           <span>📞 +56 9 4141 1832</span>
-          <span>✉️ danimardon@gmail.com</span>
+          <span>✉️ hola@dana-co.cl</span>
         </div>
       </div>
     </div>
@@ -445,7 +550,7 @@
       <div class="cv-block">
         <h3>Quiénes somos</h3>
         <p class="cv-lead">DANA&amp;CO es una consultora boutique de tecnología. No vendemos slides: llevamos problemas complejos a producción — desde plataformas de decisión con IA en fintech global hasta programas SAP de escala masiva, IoT automotriz y mediciones de madurez OPM3 en minería.</p>
-        <p class="cv-lead">Nuestro criterio nace de +15 años y decenas de proyectos en minería, energía, automotriz, defensa y servicios financieros. Hoy ese mismo estándar lo aplicamos a agentes de IA, automatización y liderazgo tecnológico ejecutivo — con la franqueza de decir qué conviene implementar primero y qué no.</p>
+        <p class="cv-lead">Nuestro criterio nace de +15 años y decenas de proyectos en minería, energía, automotriz, acuicultura y servicios financieros. Hoy ese mismo estándar lo aplicamos a agentes de IA, automatización y liderazgo tecnológico ejecutivo — con la franqueza de decir qué conviene implementar primero y qué no.</p>
       </div>
       <div class="cv-block">
         <h3>Experiencia destacada</h3>
@@ -477,20 +582,20 @@
     <div class="wrap">
       <span class="eyebrow" style="justify-content:center">Contacto</span>
       <h2>Conversemos tu <em>próximo proyecto</em>.</h2>
-      <p>Agenda un diagnóstico sin costo. Te digo con franqueza por dónde partir y qué te conviene de verdad.</p>
+      <p>Agenda un diagnóstico sin costo. Te digo con franqueza por dónde partir y qué te conviene de verdad (Somos Lean Lovers).</p>
       <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:30px">
         <a href="https://wa.me/56941411832" class="btn btn-primary">Escríbeme por WhatsApp →</a>
-        <a href="mailto:danimardon@gmail.com" class="btn btn-ghost">Enviar email</a>
+        <a href="mailto:hola@dana-co.cl" class="btn btn-ghost">Enviar email</a>
       </div>
-      <p style="font-size:.95rem">📞 +56 9 4141 1832 · ✉️ danimardon@gmail.com · 📍 Patagonia, Chile</p>
+      <p style="font-size:.95rem">📞 +56 9 4141 1832 · ✉️ hola@dana-co.cl · 📍 Patagonia, Chile</p>
     </div>
   </section>
 </div>
 
-<footer>
+<footer class="site-footer">
   <div class="wrap foot-in">
     <div>
-      <div class="foot-logo"><img src="assets/img/logo.svg" alt="DANA&CO" /></div>
+      <div class="foot-logo"><img src="assets/img/logo-danafinal.png" alt="DANA&CO" width="200" height="52" /></div>
       <p style="opacity:.7;font-size:.9rem;margin-top:10px;max-width:260px">Consultoría boutique de tecnología, IA y automatización. Patagonia, Chile.</p>
     </div>
     <div class="foot-cols">
@@ -498,13 +603,23 @@
       <div class="foot-col"><h5>Empresa</h5><a onclick="go('casos')">Casos de éxito</a><a onclick="go('nosotros')">Nosotros</a><a onclick="go('contacto')">Contacto</a></div>
     </div>
   </div>
-  <div class="wrap foot-bottom">© 2026 Dana&Co · Hecho con criterio, no con improvisación.</div>
+  <div class="foot-bottom">© 2026 Dana&Co · Hecho con criterio, no con improvisación.</div>
 </footer>
 
 
 <a class="wa-float" href="https://wa.me/56941411832?text=Hola%2C%20quiero%20conversar%20sobre%20Dana%20AI%20Studio" target="_blank" rel="noopener" aria-label="WhatsApp">
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
-<script src="js/dana-app.js"></script>
+<script src="js/dana-app.js?v=4"></script>
+<script src="js/studio.js?v=5"></script>
+<script src="js/whatsapp-agents.js?v=1"></script>
+<script>
+  // pieza-whatsapp-interactivo-v1: runtime config
+  // 1) Pega aqui tu webhook de n8n
+  // 2) Cambia DEMO_MODE a false para activar modo real
+  window.NEXT_PUBLIC_N8N_WEBHOOK_URL = "https://usuario67.app.n8n.cloud/webhook/agents";
+  window.NEXT_PUBLIC_DEMO_MODE = "false";
+</script>
+<script src="js/whatsapp-chat.js?v=2"></script>
 </body>
 </html>
